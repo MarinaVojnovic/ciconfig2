@@ -18,4 +18,4 @@ jobs:
       - name: Build Docker image
         run: docker build -t $REPO:latest -t $REPO:${GITHUB_SHA::8} .
       - name: Publish Docker image
-        run: docker push $REPO
+        run: docker push ukstim8/ciconfig:latest
